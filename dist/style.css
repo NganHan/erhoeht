@@ -759,8 +759,17 @@ ul#menu li.active a::before{
 		min-height: 100vh;
 		object-fit: cover;
 	}
+	.fp-viewing-firstPage #header ul#menu{
+		display: none !important;
+	}
 	.fp-viewing-secondPage #header ul#menu{
 		transition-delay: 0s !important;
+	}
+	.fp-viewing-secondPage #header ul#menu li{
+		display: none;
+	}
+	#header input[type="checkbox"]:checked ~ ul#menu li{
+		display: block;
 	}
 	.bs-section .section2-inner h1 span{
 		font-size: 2rem;

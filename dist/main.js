@@ -4,9 +4,9 @@ $(window).bind('load', function() {
     setTimeout(function() {
         $('.overlay').css({'display':'none'})
     }, 2000)
-    var vid = document.getElementById("video_main"); 
+    var video = document.getElementById("video_main"); 
     $('.video_main').css('display', 'block');
-    vid.play();
+    video.play();
     setTimeout(function() {
         $('.bs-video').css({'display':'none','opacity':'0'});
         Showfullpage();
@@ -15,7 +15,7 @@ $(window).bind('load', function() {
 // Will remove overlay after 1min for users cannnot load properly.
 setTimeout(function() {
     $('.overlay, body').addClass('loaded');
-}, 60000);
+}, 30000);
 // $(document).ready(function(){
 //     var vid = document.getElementById("video_main"); 
 //     $('.video_main').css('display', 'block');
