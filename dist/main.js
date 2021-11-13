@@ -6,7 +6,10 @@ $(window).bind('load', function() {
     }, 2000)
     var video = document.getElementById("video_main"); 
     $('.video_main').css('display', 'block');
-    video.play();
+    // video.play();
+    setTimeout(function() {
+        video.play();
+    }, 2000)
     setTimeout(function() {
         $('.bs-video').css({'display':'none','opacity':'0'});
         Showfullpage();
