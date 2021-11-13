@@ -4,31 +4,22 @@ $(window).bind('load', function() {
     setTimeout(function() {
         $('.overlay').css({'display':'none'})
     }, 2000)
-    var video = document.getElementById("video_main"); 
-    $('.video_main').css('display', 'block');
-    // video.play();
-    setTimeout(function() {
-        video.play();
-    }, 2000)
-    setTimeout(function() {
-        $('.bs-video').css({'display':'none','opacity':'0'});
-        Showfullpage();
-    }, 6500)
 });
 // Will remove overlay after 1min for users cannnot load properly.
 setTimeout(function() {
     $('.overlay, body').addClass('loaded');
-}, 30000);
-// $(document).ready(function(){
-//     var vid = document.getElementById("video_main"); 
-//     $('.video_main').css('display', 'block');
-//     vid.play();
-//     setTimeout(function() {
-//         $('.bs-video').css({'display':'none','opacity':'0'});
-//         Showfullpage();
-//     }, 6500)
+}, 60000);
+
+$(window).on('load', function(){
+    var vid = document.getElementById("video_main"); 
+    $('.video_main').css('display', 'block');
+    vid.play();
+    setTimeout(function() {
+        $('.bs-video').css({'display':'none','opacity':'0'});
+        Showfullpage();
+    }, 6500)
     
-// });
+});
 function Showfullpage(){
     var myFullpage = new fullpage('#fullpage', {
 		anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],

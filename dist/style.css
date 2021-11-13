@@ -358,7 +358,7 @@ ul#menu li.active a::before{
 	top: 0;
 	left: 0;
 	transform: translateY(0);
-	transition: all 0.4s ease-in-out;
+	transition: all 0.25s ease-in-out;
 }
 #header .icon-bar::after{
 	content: '';
@@ -370,7 +370,7 @@ ul#menu li.active a::before{
 	bottom: 0;
 	left: 0;
 	transform: translateY(100%);
-	transition: all 0.4s ease-in-out;
+	transition: all 0.25s ease-in-out;
 }
 #header .checkbox {
 	position: absolute;
@@ -569,7 +569,7 @@ ul#menu li.active a::before{
 }
 #section2 .section2-inner-left h1.aos-animate::before{
 	animation-name:bgLRextendAnime;
-	animation-duration:1s;
+	animation-duration:1.5s;
 	animation-fill-mode:forwards;
     content: "";
     position: absolute;
