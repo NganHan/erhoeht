@@ -1,16 +1,8 @@
-
-$(window).bind('load', function() {
+$(window).on('load', function(){
     $('.overlay, body').addClass('loaded');
     setTimeout(function() {
         $('.overlay').css({'display':'none'})
-    }, 2000)
-});
-// Will remove overlay after 1min for users cannnot load properly.
-setTimeout(function() {
-    $('.overlay, body').addClass('loaded');
-}, 60000);
-
-$(window).on('load', function(){
+    }, 1000)
     var vid = document.getElementById("video_main"); 
     $('.video_main').css('display', 'block');
     vid.play();
@@ -21,7 +13,7 @@ $(window).on('load', function(){
     
 });
 function Showfullpage(){
-    var myFullpage = new fullpage('#fullpage', {
+    myFullpage = new fullpage('#fullpage', {
 		anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
       	menu: '#menu',
 		scrollOverflow: true,
